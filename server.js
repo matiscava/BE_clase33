@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 8080;
 
 app.get( '/' , ( req , res ) => {
   let message = 'Proyecto Node.js con Git'
-  res.render('index', {message: message})
+  res.render('index', {message: message, subtitle: '¡Bienvenidos!'})
 })
 
 app.listen( PORT , () => {
